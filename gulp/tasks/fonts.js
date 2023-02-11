@@ -20,6 +20,17 @@ export const otf2ttf = () => {
         .pipe(app.gulp.dest(`${app.path.build.fonts}`))
 }
 
+export const woffCopy = () => {
+    // Looking for .woff
+    return app.gulp.src(`${app.path.srcFolder}/fonts/*.woff`, {})
+    // Copy to build folder
+    .pipe(app.gulp.dest(`${app.path.build.fonts}`))
+    // Looking for .woff2
+    .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.woff2`, {}))
+    // Copy to build folder
+    .pipe(app.gulp.dest(`${app.path.build.fonts}`))
+}
+
 export const ttf2woff = () => {
     // Looking for .ttf
     return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {})

@@ -11,7 +11,7 @@ import { server } from "./gulp/tasks/server.js"
 import { scss } from "./gulp/tasks/scss.js"
 import { scripts } from "./gulp/tasks/scripts.js"
 import { images } from "./gulp/tasks/images.js"
-import { ttf2woff, fontStyle } from "./gulp/tasks/fonts.js"
+import { ttf2woff, fontStyle, woffCopy } from "./gulp/tasks/fonts.js"
 
 global.app = {
     isBuild: process.argv.includes('--build'),
@@ -31,7 +31,7 @@ function watcher() {
 }
 
 // Sequential processing of fonts
-const fonts = gulp.series(ttf2woff, fontStyle)
+const fonts = gulp.series(ttf2woff, woffCopy, fontStyle)
 
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, scripts, images))
 // const mainTasks = gulp.parallel(copy, html, scss, scripts, images)
