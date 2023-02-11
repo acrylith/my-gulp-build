@@ -16,6 +16,7 @@ export const path = {
     src: {
         js: `${srcFolder}/js/app.js`,
         scss: `${srcFolder}/scss/style.scss`,
+        bs: `${srcFolder}/scss/bootstrap-grid.min.css`,
         html: `${srcFolder}/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif}`,
         svg: `${srcFolder}/img/**/*.svg`,
