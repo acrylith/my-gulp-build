@@ -14,3 +14,8 @@ gulp uses a code-over-configuration approach to define its tasks and relies on i
 
 Recommended to use with [Path Autocomplete](http://https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete "Path Autocomplete") VSCode extension or another IDE analog to prevent image path issues
 (.json file with extension setting already included, no need to configure it manually, just install plugin)
+## Launch
+run `gulp` in terminal to run builder, run `npm run build` to run production mode.
+In production mode server will not start, mediaqueries will be grouped together and images will be minified
+## Usage
+Just create and work with files in src folder. Gulp will start a local developing server, that watches files from dist folder.
