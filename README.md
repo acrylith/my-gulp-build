@@ -1,5 +1,5 @@
 # Gulp project builder
-gulp is an open-source JavaScript toolkit created by Eric Schoffstall and used as a streaming build system (similar to a more package-focused Make) in front-end web development.
+gulp is an open-source JavaScript toolkit used as a streaming build system (similar to a more package-focused Make) in front-end web development.
 
 It is a task runner built on Node.js and npm, used for the automation of time-consuming and repetitive tasks involved in web development like minification, concatenation, cache busting, unit testing, linting, optimization, etc. 
 
