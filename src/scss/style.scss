@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    h1 {
+        @apply text-orange-600
+    }
+}

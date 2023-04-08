@@ -25,7 +25,7 @@ global.app = {
 function watcher() {
     gulp.watch(path.watch.files, copy)
     gulp.watch(path.watch.html, html)
-    gulp.watch(path.watch.scss, scss)
+    gulp.watch([path.watch.scss, path.watch.html], scss)
     gulp.watch(path.watch.js, scripts)
     gulp.watch(path.watch.images, images)
 }
