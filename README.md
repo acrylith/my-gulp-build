@@ -1,4 +1,4 @@
-# Gulp project builder
+# Gulp project builder(Tailwind CSS support branch)
 gulp is an open-source JavaScript toolkit used as a streaming build system (similar to a more package-focused Make) in front-end web development.
 
 It is a task runner built on Node.js and npm, used for the automation of time-consuming and repetitive tasks involved in web development like minification, concatenation, cache busting, unit testing, linting, optimization, etc. 
@@ -7,8 +7,8 @@ gulp uses a code-over-configuration approach to define its tasks and relies on i
 ## Features
 - ES6 syntax
 - SCSS
+- Tailwind
 - including HTML files
-- @media queries grouping
 - automatic connection of fonts to the .scss file
 - images minifying
 
